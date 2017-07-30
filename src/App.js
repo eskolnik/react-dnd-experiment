@@ -1,21 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import HTML5Backend from 'react-dnd-html5-backend';
+import { DragDropContext } from 'react-dnd';
+
+
+import TabView from './components/TabView';
+import TabSwitcher from './components/TabSwitcher';
+import store from './store/configureStore'
 import './App.css';
+
+// import Board from './Board'
+// <Board knightPosition={this.props.knightPosition} />
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+      <Provider store={store}>
+        <div className="App">
+          <div className="App-header">
+            <h2>Darg and Dorp</h2>
+          </div>
+          <TabSwitcher />
+          <TabView />
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      </Provider>
     );
   }
 }
 
-export default App;
+export default DragDropContext(HTML5Backend)(App);
