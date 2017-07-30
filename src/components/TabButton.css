@@ -1,0 +1,12 @@
+.TabButton {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+.TabButton.active {
+  border: 2px solid black;
+  border-bottom: 1px solid white;
+
+}

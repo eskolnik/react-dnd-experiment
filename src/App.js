@@ -20,8 +20,10 @@ class App extends Component {
           <div className="App-header">
             <h2>Darg and Dorp</h2>
           </div>
-          <TabSwitcher />
-          <TabView />
+          <div className="Body">            
+            <TabSwitcher />
+            <TabView />
+          </div>
         </div>
       </Provider>
     );

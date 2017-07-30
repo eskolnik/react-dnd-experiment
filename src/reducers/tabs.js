@@ -1,3 +1,5 @@
+import { CHANGE_TAB } from '../actions/tabs';
+
 let intitialState = {
   tabs: [
     { title: "Weird", id: 1 },
@@ -7,7 +9,12 @@ let intitialState = {
 }
 
 function tabs(state = intitialState, action) {
-  return state;
+  switch(action.type) {
+    case CHANGE_TAB:
+      return Object.assign({}, state, { selectedTabId: action.newTabId })
+    default:
+      return state;
+  }
 }
 
 export default tabs

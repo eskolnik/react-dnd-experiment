@@ -1,9 +1,11 @@
 import React from 'react'
-// import './TabButton.css'
+import './TabButton.css'
 
 const TabButton = props => {
+  let className = props.active ? "TabButton active" : "TabButton"
+  let handleClick = () => props.changeTab(props.id)
   return(
-    <div className="TabButton">{props.title}</div>
+    <div className={className} onClick={handleClick}>{props.title}</div>
   )
 }
 
