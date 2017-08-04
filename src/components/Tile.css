@@ -1,5 +1,8 @@
 .Tile {
+  margin: 0 5px;
   padding: 20px;
   border: 1px solid black;
   display: inline-block;
+  height: 300px;
+  vertical-align: top;
 }

@@ -8,12 +8,12 @@ import './Tile.css'
 const Tile = props => {
   let { items, moveItem } = props
   let itemComps = items.map(item => {
-
     return <Item {...item} key={item.id} moveItem={moveItem} />
   })
 
   return (
     <div className="Tile">
+      <h1>{ `Tile ${props.id}` }</h1>
       {itemComps}
     </div>
   )

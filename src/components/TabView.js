@@ -1,21 +1,20 @@
 import React from 'react'
 import { connect } from 'react-redux'
+
 import Tab from './Tab'
+import { getSelectedTab } from './../actions/tabs'
 
 class TabView extends React.Component {
   render() {
+    let { tab } = this.props;
     return(
       <div>
-        hello I am a Tab view!
-        <Tab tab={this.props.tab} />
+        <Tab {...tab} />
       </div>
     )
   }
 }
 
-function getSelectedTab(state) {
-  return state.tabs.tabs.find(tab => tab.id === state.tabs.selectedTabId);
-}
 
 function mapStateToProps(state) {
   return {

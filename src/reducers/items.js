@@ -8,7 +8,13 @@ let intitialState = [
   { id: 78, text: "Pixies", tileId: 2, index: 4  },
   { id: 2, text: "The Smiths", tileId: 2, index: 5  },
   { id: 101, text: "B-B-Bowie", tileId: 2, index: 6  },
-  { id: 7, text: "The Flaming Lips", tileId: 2, index: 7 , }
+  { id: 7, text: "The Flaming Lips", tileId: 3, index: 8 },
+  { id: 234, text: "Grizzly Bear", tileId: 3, index: 9 },
+  { id: 80, text: "Fleetwood Mac", tileId: 3, index: 10 },
+  { id: 52, text: "Pink Floyd", tileId: 3, index: 11 },
+  { id: 190, text: "!!!", tileId: 4, index: 12 },
+  { id: 7682, text: "Xiu Xiu", tileId: 4, index: 13 },
+  { id: 67, text: "Elephant Revival", tileId: 4, index: 14 },
 ]
 
 

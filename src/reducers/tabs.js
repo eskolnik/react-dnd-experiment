@@ -2,8 +2,8 @@ import { CHANGE_TAB } from '../actions/tabs';
 
 let intitialState = {
   tabs: [
-    { title: "Weird", id: 1 },
-    { title: "Not So weird", id: 2 }
+    { title: "Weird", id: 1, tileIds: [1, 2] },
+    { title: "Not So Weird", id: 2, tileIds: [3, 4] }
   ],
   selectedTabId: 1
 }

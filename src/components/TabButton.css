@@ -1,12 +1,26 @@
 .TabButton {
   display: inline-block;
-  padding: 10px;
-  border: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
 
 }
 
-.TabButton.active {
-  border: 2px solid black;
-  border-bottom: 1px solid white;
+.TabButton .title {
+  padding: 10px;
+}
 
+.TabButton.active {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  z-index: 1000;
+}
+
+.TabButton-mask {
+  position: relative;
+  top: 1px;
+  height: 1px;
+  background-color: white;
+  z-index: 1000;
 }
